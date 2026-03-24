@@ -1,1 +1,622 @@
-# vincentgrxiv.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java in Interactive Systems - Research Study</title>
+    <link rel="stylesheet" href="group4ds.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="java-logo">☕</div>
+                <h2>Java Interactive Features</h2>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading interactive features...</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Adding Interactive Features On Java</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#netbeans">NetBeans IDE</a></li>
+                    <li><a href="#java">Java Programming</a></li>
+                    <li><a href="#palette">NetBeans Palette</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb" id="breadcrumb">
+        <div class="container">
+            <span class="breadcrumb-item"><a href="#home">Home</a></span>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-item" id="currentSection">Home</span>
+        </div>
+    </div>
+
+    <!-- Floating Table of Contents -->
+    <div class="floating-toc" id="floatingToc">
+        <h4>Quick Navigation</h4>
+        <ul>
+            <li><a href="#home" class="toc-link active">🏠 Home</a></li>
+            <li><a href="#netbeans" class="toc-link">💻 NetBeans IDE</a></li>
+            <li><a href="#java" class="toc-link">☕ Java Programming</a></li>
+            <li><a href="#palette" class="toc-link">🎨 NetBeans Palette</a></li>
+            <li><a href="#tutorials" class="toc-link">📹 Tutorials</a></li>
+            <li><a href="#about" class="toc-link">👥 About Us</a></li>
+        </ul>
+        <div class="reading-time" id="readingTime">📖 5 min read</div>
+    </div>
+
+    <!-- Font Size Controls -->
+    <div class="font-controls" id="fontControls">
+        <button class="font-btn" id="fontDecrease" aria-label="Decrease font size">A-</button>
+        <button class="font-btn" id="fontIncrease" aria-label="Increase font size">A+</button>
+        <button class="font-btn" id="fontReset" aria-label="Reset font size">A</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>UNDERSTANDING THE ROLE OF JAVA IN ADDING INTERACTIVE FEATURES TO BASIC SYSTEMS</h1>
+            <p class="subtitle">A Research Study by Grade 11 ICT Students</p>
+            <p class="institution">Asian Institute of Computer Studies Batangas</p>
+            <button class="cta-button">Explore Research</button>
+        </div>
+    </section>
+
+    <!-- NetBeans IDE Section -->
+    <section id="netbeans" class="section">
+        <div class="container">
+            <h2>NetBeans IDE 8.2</h2>
+            <p class="section-intro">The official IDE for Java development, providing comprehensive tools for building interactive applications.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Code Editor</h3>
+                    <p>Advanced syntax highlighting, code completion, and error detection for efficient Java development.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>GUI Builder</h3>
+                    <p>Drag-and-drop interface for creating professional user interfaces with Java Swing components.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Debugging Tools</h3>
+                    <p>Comprehensive debugging capabilities with breakpoints, variable inspection, and step-through execution.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📦</div>
+                    <h3>Project Management</h3>
+                    <p>Organized project structure with automatic compilation and dependency management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Java Programming Section -->
+    <section id="java" class="section alt-bg">
+        <div class="container">
+            <h2>Java Programming Language</h2>
+            <p class="section-intro">Why Java remains the standard for building interactive system features in educational environments.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>🎯 Platform Independence</h3>
+                    <p>Write once, run anywhere - Java applications work on multiple operating systems without modification.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🛡️ Type Safety</h3>
+                    <p>Strong typing and automatic memory management reduce common programming errors for student developers.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📚 Rich API Library</h3>
+                    <p>Extensive standard libraries provide ready-to-use components for GUI, networking, and database operations.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🏫 Educational Support</h3>
+                    <p>Comprehensive documentation, tutorials, and community support specifically designed for learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NetBeans Palette Section -->
+    <section id="palette" class="section">
+        <div class="container">
+            <h2>NetBeans Palette Guide</h2>
+            <p class="section-intro">Essential GUI components for building interactive applications in NetBeans 8.2.</p>
+            
+            <div class="search-container">
+                <input type="text" id="paletteSearch" placeholder="🔍 Search Swing components...">
+                <button class="search-clear" id="searchClear">×</button>
+            </div>
+            
+            <div class="palette-grid">
+                <div class="palette-card">
+                    <h3>JLabel</h3>
+                    <p>Display component for text and images in the user interface.</p>
+                    <div class="code-snippet">jLabel1 = new javax.swing.JLabel(); 
+                    jLabel1.setText("jLabel1");
+                </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JRadioButton</h3>
+                    <p>Radio button component for single selection from multiple options.</p>
+                    <div class="code-snippet">jRadioButton1 = new javax.swing.JRadioButton();
+                                              jRadioButton1.setText("jRadioButton1");                                         
+               </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JTextField</h3>
+                    <p>Text input field for user data entry and form interactions.</p>
+                    <div class="code-snippet">private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+                    // TODO add your handling code here:
+                }                                           
+                </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JProgressBar</h3>
+                    <p>Progress indicator component for showing task completion status.</p>
+                    <div class="code-snippet">jProgressBar1 = new javax.swing.JProgressBar();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JSeparator</h3>
+                    <p>Visual separator line for dividing UI components into groups.</p>
+                    <div class="code-snippet">jSeparator1 = new javax.swing.JSeparator();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JTable</h3>
+                    <p>Tabular data display component for structured information presentation.</p>
+                    <div class="code-snippet">jTable1 = new javax.swing.JTable();
+                 </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JButton</h3>
+                    <p>Interactive button component for user actions and event handling.</p>
+                    <div class="code-snippet">jButton1 = new javax.swing.JButton();
+                                              jButton1.setText("jButton1");
+                    </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JTextArea</h3>
+                    <p>Multi-line text component for displaying and editing larger text content.</p>
+                    <div class="code-snippet">jTextArea1 = new javax.swing.JTextArea();
+                                              jTextArea1.setColumns(20)
+  jTextArea1.setRows(5);
+jScrollPane2.setViewportView(jTextArea1);</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JFormattedTextField</h3>
+                    <p>Text field with formatted input validation for specific data types.</p>
+                    <div class="code-snippet">jFormattedTextField1 = new javax.swing.JFormattedTextField();
+                                              jFormattedTextField1.setText("jFormattedTextField1");</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JTextPane</h3>
+                    <p>Advanced text component with styled text and embedded components.</p>
+                    <div class="code-snippet">jTextPane2 = new javax.swing.JTextPane();
+                                              jScrollPane4.setViewportView(jTextPane2);</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JToggleButton</h3>
+                    <p>Two-state button that can be toggled on and off.</p>
+                    <div class="code-snippet">jToggleButton1 = new javax.swing.JToggleButton();
+                                              jToggleButton1.setText("jToggleButton1");
+                </div>
+                </div>
+                <div class="palette-card">
+                    <h3>JComboBox</h3>
+                    <p>Dropdown selection component for choosing from predefined options.</p>
+                    <div class="code-snippet">jComboBox1 = new javax.swing.JComboBox<>();
+jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JScrollBar</h3>
+                    <p>Scrollbar component for navigating through large content areas.</p>
+                    <div class="code-snippet">jScrollBar1 = new javax.swing.JScrollBar();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JPasswordField</h3>
+                    <p>Text field that masks input for password entry with asterisks.</p>
+                    <div class="code-snippet">jPasswordField1 = new javax.swing.JPasswordField();
+                                              jPasswordField1.setText("jPasswordField1");</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JEditorPane</h3>
+                    <p>Text component for displaying HTML, RTF, and other formatted content.</p>
+                    <div class="code-snippet">jEditorPane2 = new javax.swing.JEditorPane();
+                                              jScrollPane5.setViewportView(jEditorPane2);</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JCheckBox</h3>
+                    <p>Boolean selection component for multiple choice options.</p>
+                    <div class="code-snippet">jCheckBox1 = new javax.swing.JCheckBox();
+                                              jCheckBox1.setText("jCheckBox1");</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JList</h3>
+                    <p>List component for displaying and selecting items from a collection.</p>
+                    <div class="code-snippet">jList1 = new javax.swing.JList<>();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JSlider</h3>
+                    <p>Slider component for selecting numeric values within a range.</p>
+                    <div class="code-snippet">jSlider1 = new javax.swing.JSlider();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JSpinner</h3>
+                    <p>Input component with arrows for incrementing/decrementing values.</p>
+                    <div class="code-snippet">jSpinner1 = new javax.swing.JSpinner();</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JTree</h3>
+                    <p>Hierarchical tree component for displaying nested data structures.</p>
+                    <div class="code-snippet">jTree1 = new javax.swing.JTree();
+                                              jScrollPane6.setViewportView(jTree1);</div>
+                </div>
+                <div class="palette-card">
+                    <h3>JPanel</h3>
+                    <p>Container component for organizing and grouping other GUI elements.</p>
+                    <div class="code-snippet">jPanel1 = new javax.swing.JPanel();</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials Section -->
+    <section id="tutorials" class="section alt-bg">
+        <div class="container">
+            <h2>Simple Tutorial Video</h2>
+            <p class="section-intro">Visual guides for using some of the interactive components in NetBeans.</p>
+            
+            <div class="video-gallery">
+                <div class="video-container">
+                    <video controls poster="placeholder.jpg">
+                        <source src="lv_0_20260313085628.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3>Tutorial Video</h3>
+                        <p>Learn how to make a simple system using some interactive features in NetBeans 8.2</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-list">
+                    <div class="tutorial-item">
+                        <div class="tutorial-number">1</div>
+                        <div class="tutorial-content">
+                            <h4>Creating a project</h4>
+                            <p>Learn how to make a project in NetBeans</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="tutorial-number">2</div>
+                        <div class="tutorial-content">
+                            <h4>Creating Your First Simple System</h4>
+                            <p>Step-by-step guide to building a basic interface and all</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="tutorial-number">3</div>
+                        <div class="tutorial-content">
+                            <h4>Testing your system</h4>
+                            <p>Test your system to make sure it works correctly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Research Team</h2>
+            <p class="section-intro">Grade 11 Group 4 of Practical Research 1 ICT Students of Asian Institute of Computer Studies Batangas</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">DR</div>
+                    <h3>Dela Roca, Ram Neiden S.</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">DJ</div>
+                    <h3>Deade, Prince Jharred</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">DA</div>
+                    <h3>Delmundo, Aldrey</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">DH</div>
+                    <h3>Duno, Henrich</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">IV</div>
+                    <h3>Ilag, Vincent Gelo L.</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">NK</div>
+                    <h3>Noche, Kristel Joy</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">UK</div>
+                    <h3>Uson, Karylle P.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025-2026 Grade 11 ICT Students - Asian Institute of Computer Studies Batangas</p>
+            <p>Research Study: Understanding the Role of Java in Interactive Systems</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <span>↑</span>
+    </button>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // CTA Button Scroll
+        document.querySelector('.cta-button').addEventListener('click', () => {
+            document.querySelector('#netbeans').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeIcon.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            themeIcon.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Palette Search Functionality
+        const paletteSearch = document.getElementById('paletteSearch');
+        const searchClear = document.getElementById('searchClear');
+        const paletteCards = document.querySelectorAll('.palette-card');
+
+        paletteSearch.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            paletteCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide clear button
+            searchClear.style.display = searchTerm ? 'block' : 'none';
+        });
+
+        searchClear.addEventListener('click', () => {
+            paletteSearch.value = '';
+            paletteCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            searchClear.style.display = 'none';
+            paletteSearch.focus();
+        });
+
+        // Loading Animation
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.classList.add('fade-out');
+                
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    document.body.classList.add('loaded');
+                }, 500);
+            }, 1500); // Show loading screen for 1.5 seconds
+        });
+
+        // Prevent page from showing until loading is complete
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure loading screen is visible initially
+            const loadingScreen = document.getElementById('loadingScreen');
+            loadingScreen.style.display = 'flex';
+        });
+
+        // Scroll Progress Indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+
+        // Breadcrumb Navigation
+        const sections = ['home', 'netbeans', 'java', 'palette', 'tutorials', 'about'];
+        const sectionNames = ['Home', 'NetBeans IDE', 'Java Programming', 'NetBeans Palette', 'Tutorials', 'About Us'];
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        current = section;
+                    }
+                }
+            });
+
+            if (current) {
+                const index = sections.indexOf(current);
+                document.getElementById('currentSection').textContent = sectionNames[index];
+                
+                // Update TOC active state
+                document.querySelectorAll('.toc-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector(`.toc-link[href="#${current}"]`)?.classList.add('active');
+            }
+        });
+
+        // Floating TOC
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Reading Time Estimate
+        const text = document.body.innerText;
+        const wordsPerMinute = 200;
+        const words = text.split(/\s+/).length;
+        const minutes = Math.ceil(words / wordsPerMinute);
+        document.getElementById('readingTime').textContent = `📖 ${minutes} min read`;
+
+        // Font Size Controls
+        let fontSize = 100;
+        const fontDecrease = document.getElementById('fontDecrease');
+        const fontIncrease = document.getElementById('fontIncrease');
+        const fontReset = document.getElementById('fontReset');
+
+        fontDecrease.addEventListener('click', () => {
+            if (fontSize > 80) {
+                fontSize -= 10;
+                document.body.style.fontSize = fontSize + '%';
+            }
+        });
+
+        fontIncrease.addEventListener('click', () => {
+            if (fontSize < 120) {
+                fontSize += 10;
+                document.body.style.fontSize = fontSize + '%';
+            }
+        });
+
+        fontReset.addEventListener('click', () => {
+            fontSize = 100;
+            document.body.style.fontSize = '100%';
+        });
+
+        // Keyboard Shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Don't trigger shortcuts when typing in search
+            if (e.target.tagName === 'INPUT') return;
+
+            switch(e.key) {
+                case '1': document.getElementById('home').scrollIntoView({ behavior: 'smooth' }); break;
+                case '2': document.getElementById('netbeans').scrollIntoView({ behavior: 'smooth' }); break;
+                case '3': document.getElementById('java').scrollIntoView({ behavior: 'smooth' }); break;
+                case '4': document.getElementById('palette').scrollIntoView({ behavior: 'smooth' }); break;
+                case '5': document.getElementById('tutorials').scrollIntoView({ behavior: 'smooth' }); break;
+                case '6': document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); break;
+                case 't': case 'T': document.getElementById('themeToggle').click(); break;
+                case 's': case 'S': 
+                    e.preventDefault();
+                    document.getElementById('paletteSearch').focus(); 
+                    break;
+                case '/': 
+                    e.preventDefault();
+                    document.getElementById('paletteSearch').focus();
+                    break;
+                case 'Escape':
+                    document.getElementById('paletteSearch').value = '';
+                    document.getElementById('paletteSearch').dispatchEvent(new Event('input'));
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
